@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Matching Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body class="navyblue-bg">
+    <header id="header" class="page-header text-center">Matching Game</header>
+    <div class="dropdown" id="drop">
+      <button type = "button" class = "btn dropdown-toggle glyphicon glyphicon-align-justify" id = "dropdownMenu1" data-toggle = "dropdown">
+        <span class = "caret"></span>
+      </button>
+
+      <ul class = "dropdown-menu" role = "menu" aria-labelledby = "dropdownMenu1">
+        <li role = "presentation">
+          <a role = "menuitem" tabindex = "-1" href = "#">Home</a>
+       </li>
+
+        <li role = "presentation">
+          <a role = "menuitem" tabindex = "-1" href = "#">About</a>
+       </li>
+
+        <li role = "presentation">
+          <a role = "menuitem" tabindex = "-1" href = "#">
+              Contact
+          </a>
+       </li>
+     </ul>
+    </div>
+    <div class="a text-center">
+      <button id="playButton" type="button" class="btn btn-lg btn-primary navyblue grayish-bg" onclick="startGame()">Play</button>
+    </div>
+    <div class="row" id="game"></div>
+
+    <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">You completed the game!</h4>
+          </div>
+          <div class="modal-body">
+            <p>You ended up getting #score points.</p>
+            <p>Would you like to play again?</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" onclick="startGame()">Please</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal" href="index.html">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h1 id="score" class="text-center"></h1>
+    <footer class="page-footer">&#169; 2016 Stephen Sanders</footer>
+    <script src="game.js"></script>
+  </body>
+</html>
