@@ -11,6 +11,6 @@ Any advice and added code will be highly appreciated (even if it isn't in the be
 * HTML5/CSS3
 * JavaScript
 * Bootstrap
-* 
+
 ## Website To Play
 ssmatchinggame.site88.net/matching/index.html
