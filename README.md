@@ -13,4 +13,4 @@ Any advice and added code will be highly appreciated (even if it isn't in the be
 * Bootstrap
 
 ## Website To Play
-ssmatchinggame.site88.net/matching/index.html
+http://ssmatchinggame.site88.net/matching/index.html
